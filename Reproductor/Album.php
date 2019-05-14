@@ -19,7 +19,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="player.css">
+  <link rel="stylesheet" href="css/player.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -84,7 +84,7 @@
       </div>
     </div>
 
-  <script src="player.js"></script>
+  <script src="js/player.js"></script>
 </body>
 </html>
    
