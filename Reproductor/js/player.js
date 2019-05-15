@@ -4,6 +4,7 @@ function init(){
     var audio = document.getElementById('audio');
     var playlist = document.getElementById('playlist');
     var tracks = playlist.getElementsByTagName('a');
+    var nextTrack = 0;
     audio.volume = 0.10;
     audio.play();
     
@@ -20,18 +21,19 @@ function init(){
     //agregamos evento para reproducir la siguiente canción en la lista
     //si la canción es la ultima reproducir la primera otra vez
     audio.addEventListener('ended',function(e) {
-        for(var track in tracks) {
-          var link = tracks[track];
-          var nextTrack = parseInt(track) + 1;
-          if(typeof link === "function" || typeof link === "number") continue;
-          if(!this.src) this.src = tracks[0];
-          if(track === (tracks.length - 1)) nextTrack = 0;
-                                	console.log(nextTrack);
-        	if(link.getAttribute('href') === this.src) {
-          	var nextLink = tracks[nextTrack];
-          	run(nextLink.getAttribute('href'), audio, nextLink);
-            break;
+      for(var track in tracks) {
+        var link = tracks[track];
+        var nextTrack = parseInt(track) + 1;
+        if(typeof link === "function" || typeof link === "number") continue;
+        if(!this.src) this.src = tracks[0];
+        if(track === (tracks.length - 1)) nextTrack = 0;
+                                console.log(nextTrack);
+        if(link.getAttribute('href') === this.src) {
+          var nextLink = tracks[nextTrack];
+          run(nextLink.getAttribute('href'), audio, nextLink);
+          
           }
+          break;
         }
     });
 }
