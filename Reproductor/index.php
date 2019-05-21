@@ -111,8 +111,8 @@
               <div class="image" style="background-image: url('images/the-beatles.png');">
             </div>
               <div class="unit-9-content">
-                <input class="btn btn-primary" readonly name="album" value="A Day in the Life" type="submit"/><br>
-                <input class="btn disabled" style="background:black; color:white;" name="artista" value="The Beatles"><p class="badge badge-secondary">21min</p>
+                <input class="btn btn-primary" readonly name="album" value="Where Myth Fades to Legend" type="submit"/><br>
+                <input class="btn disabled" style="background:black; color:white;" name="artista" value="Alesana"><p class="badge badge-secondary">21min</p>
               </div>
             </div>
           </form>
