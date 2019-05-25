@@ -109,57 +109,28 @@ if ($_SESSION['usuario'] == "") {
       </div>
     </div>
 
-    <div class="pb-5" style="margin-top: -100px;">
-      <div class="container-fluid">
-
-        <div class="row no-gutters">
-          
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <form action="Album.php" method="post">
-            <div class="unit-9">
-              <div class="image" style="background-image: url('images/the-beatles.png');">
+    <div class='pb-5' style='margin-top: -100px;'>
+    <div class='container-fluid'>
+      <div class='row no-gutters'>
+    <?php
+for ($i = 0; $i < 8; $i++) {
+    echo " <div class='col-md-6 col-lg-3' data-aos='fade-up' data-aos-delay='100'>
+        <form action='Album.php' method='post'>
+          <div class= 'unit-9'>
+          <div class= 'image' style= 'background-image:url(images/the-beatles.png);'>
+          </div>
+            <div class= 'unit-9-content'>
+              <input class= 'btn btn-primary' readonly name='album' value='Where Myth Fades to Legend' type='submit'/><br>
+              <input class='btn disabled' style='background:black; color:white; 'name='artista' value='Alesana'><p class='badge badge-secondary'>21min</p>
             </div>
-              <div class="unit-9-content">
-                <input class="btn btn-primary" readonly name="album" value="Where Myth Fades to Legend" type="submit"/><br>
-                <input class="btn disabled" style="background:black; color:white;" name="artista" value="Alesana"><p class="badge badge-secondary">21min</p>
-              </div>
-            </div>
-          </form>
           </div>
-
-         
-
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <a href="#" class="unit-9">
-              <div class="image" style="background-image: url('images/img_2.jpg');"></div>
-              <div class="unit-9-content">
-                <h2>Good Morning Show</h2>
-                <span>Friday 1:00pm &mdash; 2:30pm</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <a href="#" class="unit-9">
-              <div class="image" style="background-image: url('images/img_3.jpg');"></div>
-              <div class="unit-9-content">
-                <h2>Blues Radio</h2>
-                <span>Friday 1:00pm &mdash; 2:30pm</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <a href="#" class="unit-9">
-              <div class="image" style="background-image: url('images/img_4.jpg');"></div>
-              <div class="unit-9-content">
-                <h2>Classic Songs</h2>
-                <span>Friday 1:00pm &mdash; 2:30pm</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+        </form>
+        </div> ";
+}
+?>
+   </div>
+ </div>
+</div>  
 
     <div class="site-section">
 
