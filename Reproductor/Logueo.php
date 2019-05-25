@@ -1,10 +1,14 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start();
+?>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Login - CloudSonos</title>
-	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<!--link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="Login Assets/css/style.css"/>
 </head>
 <?php
@@ -40,10 +44,12 @@ $result = curl_exec($ch);
 // Close cURL session handle
 curl_close($ch);
 if($result == 'true'){
-    header('Location: resultado.php?resultado=1');
+	$_SESSION['usuario'] = $nombre;
+	header("location: index.php");
 }else{
-    header('Location: resultado.php?resultado=8');
-}
+	echo "<script>alert('Usuario o contraseña son incorrectos')</script>";
+	//header("location: Logueo.php");
+	}
 }
 ?>
 <body style="background: black">
@@ -121,9 +127,10 @@ if($result == 'true'){
 			</div>
 		</div>
 	</div>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script-->
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script-->
+	<script src="js/bootstrap.min.js"></script>
 	<script src="Login Assets/js/index.js"></script>
 
 <!--	<script>

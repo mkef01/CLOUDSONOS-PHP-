@@ -240,10 +240,10 @@ a{
 }
 
 .active a{
-  color: #faa700;
+  color: #faa700 !important;
   text-decoration:none;
 }
 
 li a:hover{
-  text-decoration:none;
+ text-decoration:underline;
 }

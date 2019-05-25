@@ -4,6 +4,7 @@ function init(){
     var audio = document.getElementById('audio');
     var playlist = document.getElementById('playlist');
     var tracks = playlist.getElementsByTagName('a');
+    var BtnPlay = document.getElementById('btnplay');
     var nextTrack = 0;
     audio.volume = 0.10;
     audio.play();
@@ -15,9 +16,13 @@ function init(){
       link.addEventListener('click', function(e) {
       	e.preventDefault();
         var song = this.getAttribute('href');
-       	run(song, audio, this);
+         run(song, audio, this);
       });
     }
+    var items = document.getElementsByTagName("span");
+        for(i = 0; i < items.length; i++) {
+            items[i].setAttribute("text", audio.length);
+        }
     //agregamos evento para reproducir la siguiente canción en la lista
     //si la canción es la ultima reproducir la primera otra vez
     audio.addEventListener('ended',function(e) {
