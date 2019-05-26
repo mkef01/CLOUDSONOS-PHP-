@@ -6,7 +6,9 @@ function init(){
     var tracks = playlist.getElementsByTagName('a');
     var BtnPlay = document.getElementById('btnplay');
     var nextTrack = 0;
-    audio.volume = 0.10;
+    audio.volume = 1.00;
+    BtnPlay.addEventListener("click", playSong);
+
     audio.play();
     
     //Agregamos los eventos a los links que nos permitirán cambiar de canción
@@ -19,26 +21,28 @@ function init(){
          run(song, audio, this);
       });
     }
-    var items = document.getElementsByTagName("span");
-        for(i = 0; i < items.length; i++) {
-            items[i].setAttribute("text", audio.length);
-        }
+    // var items = document.getElementsByTagName("span");
+    //     for(i = 0; i < items.length; i++) {
+    //         items[i].setAttribute("text", audio.length);
+    //     }
     //agregamos evento para reproducir la siguiente canción en la lista
     //si la canción es la ultima reproducir la primera otra vez
+    var nextTrack = 0;
     audio.addEventListener('ended',function(e) {
-      for(var track in tracks) {
+      for(var track = 0; track < tracks.length; track++) {
         var link = tracks[track];
-        var nextTrack = parseInt(track) + 1;
+        nextTrack = parseInt(track) + 1;
         if(typeof link === "function" || typeof link === "number") continue;
         if(!this.src) this.src = tracks[0];
         if(track === (tracks.length - 1)) nextTrack = 0;
-                                console.log(nextTrack);
+                                //console.log("next "+nextTrack);
+                                //console.log("current "+track);
         if(link.getAttribute('href') === this.src) {
           var nextLink = tracks[nextTrack];
           run(nextLink.getAttribute('href'), audio, nextLink);
-          
-          }
           break;
+          }
+          //break;
         }
     });
 }
@@ -59,4 +63,13 @@ function run(song, audio, link){
         audio.src = song;
         audio.load();
         audio.play();
+}
+
+function playSong(){
+ if(audio.play()){
+   audio.pause();
+ }
+ else{
+   audio.play();
+ }
 }

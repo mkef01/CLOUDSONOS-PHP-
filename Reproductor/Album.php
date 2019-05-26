@@ -91,7 +91,7 @@ else{
   <div class="album-info">
     <div class="album-art"><img src="<?php echo $json[0]->UrlAlbum ?>"/>
       <div class="actions">
-        <button class="play" id="btnplay">Play</button>
+        <button class="" id="btnplay">Play</button>
         <button class="btn fas fa-heart" ></button>
         <div class="bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" fill="#faa800" height="24" viewbox="0 0 24 24" width="24">

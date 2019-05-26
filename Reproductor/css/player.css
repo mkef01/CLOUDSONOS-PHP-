@@ -245,6 +245,6 @@ a{
 }
 
 li a:hover{
-  color: cadetblue;
+  color: cadetblue !important;
  text-decoration:underline;
 }
