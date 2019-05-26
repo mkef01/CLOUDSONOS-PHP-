@@ -7,6 +7,31 @@ session_start();
 // }
 ?>
 
+<?php
+  $url = "http://localhost:56131/api/reproductor/index";
+  
+  //$url2 = $url . "/login/acceso";
+ 
+// Prepare new cURL resource
+//$url = $url . '/login/acceso';
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+curl_setopt($ch, CURLOPT_POST, true);
+
+// Set HTTP Header for POST request 
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+'Content-Type: application/json',
+'Content-Length: 0 ')
+);
+
+// Submit the POST request
+$result = curl_exec($ch);
+$json = json_decode($result);
+// Close cURL session handle
+curl_close($ch);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -113,19 +138,19 @@ session_start();
     <div class='container-fluid'>
       <div class='row no-gutters'>
     <?php
-for ($i = 0; $i < 8; $i++) {
-    echo " <div class='col-md-6 col-lg-3' data-aos='fade-up' data-aos-delay='100'>
-        <form action='Album.php' method='post'>
-          <div class= 'unit-9'>
-          <div class= 'image' style= 'background-image:url(images/the-beatles.png);'>
-          </div>
-            <div class= 'unit-9-content'>
-              <input class= 'btn btn-primary' readonly name='album' value='Where Myth Fades to Legend' type='submit'/><br>
-              <input class='btn disabled' style='background:black; color:white; 'name='artista' value='Alesana'><p class='badge badge-secondary'>21min</p>
-            </div>
-          </div>
-        </form>
-        </div> ";
+  foreach($json as $obj) {
+    echo  "<div class='col-md-6 col-lg-3' data-aos='fade-up' data-aos-delay='100'>";
+    echo    "<form action='Album.php' method='post'>";
+    echo      "<div class= 'unit-9'>";
+    echo      "<div class= 'image' style= 'background-image:url($obj->UrlCaratula);'>";
+    echo      "</div>";
+    echo        "<div class= 'unit-9-content'>";
+    echo          "<input class= 'btn btn-primary' readonly name='album' value='$obj->Album' type='submit'/><br>";
+    echo          "<input class='btn disabled' style='background:black; color:white; 'name='artista' value='$obj->NombreArtista'><p class='badge badge-secondary'>$obj->Duracion</p>";
+    echo        "</div>";
+    echo      "</div>";
+    echo    "</form>";
+    echo   "</div>" ;
 }
 ?>
    </div>
