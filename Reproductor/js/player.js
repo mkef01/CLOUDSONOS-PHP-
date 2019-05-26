@@ -27,7 +27,7 @@ function init(){
     //     }
     //agregamos evento para reproducir la siguiente canción en la lista
     //si la canción es la ultima reproducir la primera otra vez
-    var nextTrack = 0;
+    
     audio.addEventListener('ended',function(e) {
       for(var track = 0; track < tracks.length; track++) {
         var link = tracks[track];
@@ -66,10 +66,5 @@ function run(song, audio, link){
 }
 
 function playSong(){
- if(audio.play()){
-   audio.pause();
+     audio.play();
  }
- else{
-   audio.play();
- }
-}

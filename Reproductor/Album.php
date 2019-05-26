@@ -91,7 +91,7 @@ else{
   <div class="album-info">
     <div class="album-art"><img src="<?php echo $json[0]->UrlAlbum ?>"/>
       <div class="actions">
-        <button class="" id="btnplay">Play</button>
+        <button class="btn" id="btnplay">Play</button>
         <button class="btn fas fa-heart" ></button>
         <div class="bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" fill="#faa800" height="24" viewbox="0 0 24 24" width="24">
@@ -103,7 +103,7 @@ else{
     </div>
     <div class="album-details">
       <h2> <img src="<?php echo $json[0]->UrlBanda ?>"/> <?php echo $art ?></h2>
-      <h1><?php echo $al ?></h1><?php echo $json[0]->Genero."</br>" ?> &copy; <?php echo $json[0]->Año." "; echo $json[0]->Discografia?>
+      <h1><?php echo $al ?></h1><?php echo $json[0]->Genero."<br/>" ?> &copy; <?php echo $json[0]->Año." "; echo $json[0]->Discografia?>
       <p><?php echo $json[0]->Descripcion ?></p>
     </div>
   </div>
