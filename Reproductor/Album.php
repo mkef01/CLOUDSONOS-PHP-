@@ -103,7 +103,7 @@ else{
     </div>
     <div class="album-details">
       <h2> <img src="<?php echo $json[0]->UrlBanda ?>"/> <?php echo $art ?></h2>
-      <h1><?php echo $al ?></h1><?php echo $json[0]->Genero ?> &copy; <?php echo $json[0]->Año; echo $json[0]->Discografia?>
+      <h1><?php echo $al ?></h1><?php echo $json[0]->Genero."</br>" ?> &copy; <?php echo $json[0]->Año." "; echo $json[0]->Discografia?>
       <p><?php echo $json[0]->Descripcion ?></p>
     </div>
   </div>

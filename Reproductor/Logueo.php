@@ -12,7 +12,7 @@ session_start();
 	<link rel="stylesheet" href="Login Assets/css/style.css"/>
 </head>
 <?php
-    include './ruta.php';
+	$url = "http://localhost:56131/api";
     if (isset($_REQUEST['Usuario']) && isset($_REQUEST['Contraseña'])){
         $nombre = $_REQUEST['Usuario'];
         $contra = $_REQUEST['Contraseña'];
@@ -127,8 +127,8 @@ if($result == 'true'){
 			</div>
 		</div>
 	</div>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script-->
+	<!-- <script src="js/jquery-migrate-3.0.1.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script-->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="Login Assets/js/index.js"></script>

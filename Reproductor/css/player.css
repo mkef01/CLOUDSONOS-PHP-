@@ -245,5 +245,6 @@ a{
 }
 
 li a:hover{
+  color: cadetblue;
  text-decoration:underline;
 }
