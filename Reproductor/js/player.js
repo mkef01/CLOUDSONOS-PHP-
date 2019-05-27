@@ -5,9 +5,11 @@ function init(){
     var playlist = document.getElementById('playlist');
     var tracks = playlist.getElementsByTagName('a');
     var BtnPlay = document.getElementById('btnplay');
+    var BtnBook = document.getElementById('');
     var nextTrack = 0;
     audio.volume = 1.00;
     BtnPlay.addEventListener("click", playSong);
+    BtnBook.addEventListener("click",bookmark);
 
     audio.play();
     
@@ -68,3 +70,7 @@ function run(song, audio, link){
 function playSong(){
      audio.play();
  }
+
+function bookmark(){
+    
+}
