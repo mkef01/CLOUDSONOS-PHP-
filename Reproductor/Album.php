@@ -92,7 +92,7 @@ else{
     <div class="album-art"><img src="<?php echo $json[0]->UrlAlbum ?>"/>
       <div class="actions">
         <button class="btn" id="btnplay">Play</button>
-        <a class="btn fas fa-heart" href="bookmark.php"></a>
+        <a class="btn fas fa-heart" href="bookmark.php?album=$al"></a>
         <div class="bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" fill="#faa800" height="24" viewbox="0 0 24 24" width="24">
             <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path>
