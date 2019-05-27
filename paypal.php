@@ -56,14 +56,14 @@ if (isset($_POST['submitPayment'])) {
 else {   
 ?>
 <form class="form-amount" action="paypal.php" method="post">
-    <?php if ($error) { ?><div class="alert alert-danger">El valor introducido no es correcto. Debe introducir por ejemplo: 2.99</div><?php } ?>
+    <?php if ($error) { ?><div class="alert alert-danger">El valor introducido no es correcto. Debe introducir por ejemplo: 50.99</div><?php } ?>
     <div class="form-group">
         <label for="concept">Concepto</label>
         <input type="text" id="concept" name="concept" class="form-control"<?php if ($concept) { ?> value="<?php echo $concept; ?>"<?php }else{ ?> placeholder="Indicar un concepto"<?php } ?>>
     </div>
     <div class="form-group">
         <label for="amount">Importe</label>
-        <input type="text" id="amount" name="amount" class="form-control"<?php if ($amount) { ?> value="<?php echo $amount; ?>"<?php }else{ ?> placeholder="Por ejemplo: 2.99"<?php } ?>>
+        <input type="text" id="amount" name="amount" class="form-control"<?php if ($amount) { ?> value="<?php echo $amount; ?>"<?php }else{ ?> placeholder="Por ejemplo: 50.00"<?php } ?>>
     </div>
     <input class="btn btn-lg btn-primary btn-block" name="submitPayment" type="submit" value="Pagar">
     <img class="img-responsive" src="img/paypal.png" alt="Pagos con PayPal y PHP" height="65" width="300"><br/>
