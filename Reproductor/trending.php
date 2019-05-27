@@ -45,9 +45,8 @@
 
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                   <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                   </li>
-                  <li><a href="dj.html">DJs</a></li>
                   <li class="has-children active">
                     <a href="trending.html">Trending</a>
                     <ul class="dropdown arrow-top">
@@ -64,9 +63,9 @@
                       </li>
                     </ul>
                   </li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="events.php">Events</a></li>
+                  <li><a href="about.php">About</a></li>
+                  <li><a href="contact.php">Contact</a></li>
                 </ul>
               </nav>
             </div>

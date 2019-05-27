@@ -69,7 +69,7 @@ curl_close($ch);
         <div class="container py-1">
           <div class="row align-items-center">
             <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>Radios<span class="text-primary">.</span></strong></a></h1>
+              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>RADIOS<span class="text-primary">.</span></strong></a></h1>
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -78,9 +78,8 @@ curl_close($ch);
 
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                   <li class="active">
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                   </li>
-                  <li><a href="dj.html">DJs</a></li>
                   <li class="has-children">
                     <a href="#">Trending</a>
                     <ul class="dropdown arrow-top">
@@ -97,9 +96,9 @@ curl_close($ch);
                       </li>
                     </ul>
                   </li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="events.php">Events</a></li>
+                  <li><a href="about.php">About</a></li>
+                  <li><a href="contact.php">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -123,8 +122,8 @@ curl_close($ch);
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-            <h1>Listen &mdash; On-Air Now</h1>
-            <p class="mb-4"><span class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
+            <h1>Listen &mdash; Random Songs for your soul!!!</h1>
+            <p class="mb-4"><span class="small">Disfruta de una cancion al azar mientras eliges que escuchar</span></p>
 
             <div id="playerContainer"></div>
 
@@ -139,13 +138,13 @@ curl_close($ch);
       <div class='row no-gutters'>
     <?php
   foreach($json as $obj) {
-    echo  "<div class='col-md-6 col-lg-3' data-aos='fade-up' data-aos-delay='100'>";
+    echo  "<div class='col-md-5 col-lg-3' data-aos='fade-up' data-aos-delay='100'>";
     echo    "<form action='Album.php' method='post'>";
     echo      "<div class= 'unit-9'>";
     echo      "<div class= 'image' style= 'background-image:url($obj->UrlCaratula);'>";
     echo      "</div>";
     echo        "<div class= 'unit-9-content'>";
-    echo          "<input class= 'btn btn-primary' readonly name='album' value='$obj->Album' type='submit'/><br>";
+    echo          "<input class= 'btn btn-secondary' readonly name='album' value='$obj->Album' type='submit'/><br>";
     echo          "<input class='btn disabled' style='background:black; color:white; 'name='artista' value='$obj->NombreArtista'><p class='badge badge-secondary'>$obj->Duracion</p>";
     echo        "</div>";
     echo      "</div>";
