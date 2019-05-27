@@ -1,5 +1,5 @@
 <?php
-//Leer POST del sistema de PayPal y añadir ‘cmd’
+//Leer POST del sistema de PayPal y aï¿½adir ï¿½cmdï¿½
 
 $req = 'cmd=_notify-validate';
 
@@ -17,13 +17,13 @@ $header = "POST /cgi-bin/webscr HTTP/1.0\r\n";
 $header .= "Content-Type: application/x-www-form-urlencoded\r\n";
 $header .= "Content-Length: " . strlen($req) . "\r\n\r\n";
 //header para el correo
-$headers = 'From: webmaster@ejemplo.com' . "\r\n" .
-'Reply-To: webmaster@ejemplo.com' . "\r\n" .
+$headers = 'From: cloud.sonos@gmail.com' . "\r\n" .
+'Reply-To: cloud.sonos@gmail.com' . "\r\n" .
 'X-Mailer: PHP/' . phpversion();
 //Si estamos usando el testeo de paypal:
 $fp = fsockopen ('ssl://www.sandbox.paypal.com', 443, $errno, $errstr, 30);
 //En caso de querer usar PayPal oficialmente:
-//$fp = fsockopen (‘ssl://www.paypal.com’, 443, $errno, $errstr, 30);
+//$fp = fsockopen (ï¿½ssl://www.paypal.comï¿½, 443, $errno, $errstr, 30);
 if (!$fp) {
 // ERROR DE HTTP
 echo "no se ha aiberto el socket<br/>";
@@ -34,11 +34,11 @@ $res = fgets ($fp, 1024);
 if (strcmp ($res, "VERIFIED") == 0) {//Almacenamos todos los valores recibidos por $_POST.
 foreach($_POST as $key => $value){
 $recibido.= $key." = ". $value."\r\n";
-}//Enviamos por correo todos los datos , esto es solo para que veáis como funciona
+}//Enviamos por correo todos los datos , esto es solo para que veï¿½is como funciona
 
  
 
-//En un caso real accederíamos a una BBDD y almacenaríamos los datos.
+//En un caso real accederï¿½amos a una BBDD y almacenarï¿½amos los datos.
 // > Comprobando que payment_status es Completed
 // > Comprobando que txn_id no ha sido previamente procesado
 // > Comprobando que receiver_email es tu email primario de paypal

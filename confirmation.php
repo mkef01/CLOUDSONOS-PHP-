@@ -8,12 +8,8 @@
 <body>
 <div class="container">
     <div class="jumbotron" style="margin-top: 30px; background-color: #E0E0E0;">
-        <img class="logo img-responsive" src="http://jose-aguilar.com/modulos-prestashop/themes/japs/img/logo.png" alt="Jose Aguilar - Módulos PrestaShop" height="65" width="300">
-        <h1>Pago confirmado</h1>
+                <h1>Pago confirmado</h1>
         <p>Su pago ha sido recibido correctamente. Muchas gracias por su confianza.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="http://jose-aguilar.com/modulos-prestashop/" role="button">Visitar tienda</a>
-        </p>
       </div>
 </div>
 </body>
