@@ -336,10 +336,9 @@ curl_close($ch2);
   foreach($json2 as $obj2)  { 
     echo "<div class='col-md-6 col-lg-4 mb-5 mb-lg-5'>";
     echo "<div class='team-member'>";
-     echo "<img src='$obj2->UrlArtista' alt='Image' class='img-fluid'>";
+     echo "<img src='$obj2->UrlArtista' alt='Image' class='img-fluid' style='witdh:250px;height:250px'>";
       echo "<div class='text'>";
         echo "<h2 class='mb-2 font-weight-light h4'>$obj2->NombreArtista</h2>";
-        echo "<span class='d-block mb-2 text-white-opacity-05'>Creative Director</span>";
         echo "<p class='mb-4'>$obj2->IntegrantesBanda</p>";
         echo  "<p>";
         echo  "<a href='#' class='text-white p-2'><span class='icon-facebook'></span></a>";
