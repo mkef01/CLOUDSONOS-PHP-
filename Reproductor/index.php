@@ -122,8 +122,8 @@ curl_close($ch);
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-            <h1>Listen &mdash; Random Songs for your soul!!!</h1>
-            <p class="mb-4"><span class="small">Disfruta de una cancion al azar mientras eliges que escuchar</span></p>
+            <h1>Listen &mdash; Random Songs for your soul</h1>
+            <p class="mb-4"><span class="small">ONLY GOOD VIBES FOR YOU</span></p>
 
             <div id="playerContainer"></div>
 

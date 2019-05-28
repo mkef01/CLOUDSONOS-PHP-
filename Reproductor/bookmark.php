@@ -6,7 +6,7 @@ $curl = curl_init();
 // Set some options - we are passing in a useragent too here
 curl_setopt_array($curl, [
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://localhost:56131/api/reproductor/bookmark?album=$album',
+    CURLOPT_URL => "http://localhost:56131/api/reproductor/bookmark?album=$album",
     CURLOPT_USERAGENT => 'cURL Request'
 ]);
 // Send the request & save response to $resp

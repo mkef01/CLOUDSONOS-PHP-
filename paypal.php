@@ -34,9 +34,9 @@ if (isset($_POST['submitPayment'])) {
         <input name="cmd" type="hidden" value="_cart" />
         <input name="upload" type="hidden" value="1" />
         <input name="business" type="hidden" value="cloud.sonos@gmail.com" />
-        <input name="shopping_url" type="hidden" value="" />
+        <input name="shopping_url" type="hidden" value="https://localhost/cloudsonos-php-/confirmation.php" />
         <input name="currency_code" type="hidden" value="USD" />
-        <input name="return" type="hidden" value="confirmation.php" />
+        <input name="return" type="hidden" value="https://localhost/cloudsonos-php-/confirmation.php" />
         <input name="notify_url" type="hidden" value="ipn.php" />
 
         <input name="rm" type="hidden" value="2" />
