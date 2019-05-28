@@ -84,7 +84,19 @@ curl_close($ch2);
   <title><?php echo $al ?> - CloudSonos</title>
 </head>
 <body>
-  
+    <?php
+      if(isset($_GET['param'])){
+
+          $parametro = $_GET['param'];
+          if ($parametro == 'true'){
+            echo "<script>alert('Guardado en Favoritos')</script>";
+          }
+          else {
+            echo "<script>alert('Error no se pudo guardar el album')</script>";
+          }
+      }
+
+  ?>
   
 <div class="background" style="background: url(<?php echo $json[0]->UrlBanda ?>) center/cover;"></div>
 <section>
@@ -92,7 +104,10 @@ curl_close($ch2);
     <div class="album-art"><img src="<?php echo $json[0]->UrlAlbum ?>"/>
       <div class="actions">
         <button class="btn" id="btnplay">Play</button>
-        <a class="btn fas fa-heart" href="bookmark.php?album=<?php echo $al ?>"></a>
+        <form action="bookmark.php" method="post">
+        <input hidden id="alb" value="<?php echo $al ?>">
+        <button class="fas fa-heart" type="submit">Bookmark</button>
+        </form>
         <div class="bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" fill="#faa800" height="24" viewbox="0 0 24 24" width="24">
             <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path>
