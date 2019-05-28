@@ -46,7 +46,6 @@
                   <li>
                     <a href="index.php">Home</a>
                   </li>
-                  <li><a href="dj.php">DJs</a></li>
                   <li class="has-children">
                     <a href="#">Trending</a>
                     <ul class="dropdown arrow-top">

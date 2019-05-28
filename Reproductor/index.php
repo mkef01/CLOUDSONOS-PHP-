@@ -32,6 +32,31 @@ $json = json_decode($result);
 curl_close($ch);
 ?>
 
+<!-- API Artistas --> 
+<?php
+  $url2 = "http://localhost:56131/api/reproductor/artistas";
+  
+  //$url2 = $url . "/login/acceso";
+ 
+// Prepare new cURL resource
+//$url = $url . '/login/acceso';
+$ch2 = curl_init($url2);
+curl_setopt($ch2, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch2, CURLINFO_HEADER_OUT, true);
+curl_setopt($ch2, CURLOPT_POST, true);
+
+// Set HTTP Header for POST request 
+curl_setopt($ch2, CURLOPT_HTTPHEADER, array(
+'Content-Type: application/json',
+'Content-Length: 0 ')
+);
+
+// Submit the POST request
+$result2 = curl_exec($ch2);
+$json2 = json_decode($result2);
+// Close cURL session handle
+curl_close($ch2);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -138,7 +163,7 @@ curl_close($ch);
       <div class='row no-gutters'>
     <?php
   foreach($json as $obj) {
-    echo  "<div class='col-md-5 col-lg-3' data-aos='fade-up' data-aos-delay='100'>";
+    echo  "<div class='col-md-5 col-lg-4' data-aos='fade-up' data-aos-delay='100'>";
     echo    "<form action='Album.php' method='post'>";
     echo      "<div class= 'unit-9'>";
     echo      "<div class= 'image' style= 'background-image:url($obj->UrlCaratula);'>";
@@ -302,136 +327,33 @@ curl_close($ch);
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Our DJs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
+            <h2 class="mb-5">Nuestros Artistas</h2>
+            <p>Conoce algunos de los artirtas que trabajan con nosotros y disfruta de su mejor musica.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Megan Smith</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_3.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Philip Martin</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Steven Ericson</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_5.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Nathan Dumlao</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-            <div class="team-member">
-
-              <img src="images/person_6.jpg" alt="Image" class="img-fluid">
-
-              <div class="text">
-
-                <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-                <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-
+        <div class="row" >
+        <?php
+  foreach($json2 as $obj2)  { 
+    echo "<div class='col-md-6 col-lg-4 mb-5 mb-lg-5'>";
+    echo "<div class='team-member'>";
+     echo "<img src='$obj2->UrlArtista' alt='Image' class='img-fluid'>";
+      echo "<div class='text'>";
+        echo "<h2 class='mb-2 font-weight-light h4'>$obj2->NombreArtista</h2>";
+        echo "<span class='d-block mb-2 text-white-opacity-05'>Creative Director</span>";
+        echo "<p class='mb-4'>$obj2->IntegrantesBanda</p>";
+        echo  "<p>";
+        echo  "<a href='#' class='text-white p-2'><span class='icon-facebook'></span></a>";
+        echo  "<a href='#' class='text-white p-2'><span class='icon-twitter'></span></a>";
+        echo  "<a href='#' class='text-white p-2'><span class='icon-linkedin'></span></a>";
+        echo "</p>";
+      echo  "</div>";
+      echo "</div>";
+      echo "</div>";
+  }
+  ?>     
         </div>
       </div>
     </div>
-
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
