@@ -1,6 +1,6 @@
 <?php
 session_start();
-  $album = $_POST['alb'];
+  $album = $_REQUEST['alb'];
   $usu = $_SESSION['usuario'];
    $url = "http://localhost:56131/api/reproductor/bookmark";
 

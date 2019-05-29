@@ -90,9 +90,11 @@ curl_close($ch2);
           $parametro = $_GET['param'];
           if ($parametro == 'true'){
             echo "<script>alert('Guardado en Favoritos')</script>";
+            //header("location: Album.php");
           }
           else {
             echo "<script>alert('Error no se pudo guardar el album')</script>";
+            //header("location: Album.php");
           }
       }
 
@@ -105,7 +107,7 @@ curl_close($ch2);
       <div class="actions">
         <button class="btn" id="btnplay">Play</button>
         <form action="bookmark.php" method="post">
-        <input hidden id="alb" value="<?php echo $al ?>">
+        <input hidden name="alb" value="<?php echo $al ?>">
         <button class="fas fa-heart" type="submit">Bookmark</button>
         </form>
         <div class="bookmark">
