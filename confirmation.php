@@ -1,13 +1,10 @@
 <?php
 session_start();
-if (isset($_COOKIE['Usuario'])){
-  header("Location: Logueo.php");
-  exit;
-}if(isset($_COOKIE['Usuario']) && isset($_COOKIE['correo']) && isset($_COOKIE['Contraseña'])){
+if(isset($_SESSION['usuario']) && isset($_SESSION['correo']) && isset($_SESSION['contra'])){
   $url = "http://localhost:56131/api/";
-  $nombre = $_COOKIE['Usuario'];
-	$correo = $_COOKIE['correo'];
-  $pass1 = $_COOKIE['Contraseña'];
+  $nombre = $_SESSION['usuario'];
+  $correo = $_SESSION['correo'];
+  $pass1 = $_SESSION['contra'];
   $url2 = $url . "reproductor/insertar";
   $data = array(
     'Contraseña' => $nombre,
