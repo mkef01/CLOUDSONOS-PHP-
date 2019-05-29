@@ -40,7 +40,7 @@
 						<a class="nav-link js-scroll-trigger" href="#team">Equipo</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="Logueo.php">Login</a>
+						<a class="nav-link js-scroll-trigger" href="Reproductor\Logueo.php">Login</a>
 					</li>
 				</ul>
 			</div>

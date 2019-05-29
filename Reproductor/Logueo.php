@@ -11,6 +11,7 @@ session_start();
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="Login Assets/css/style.css"/>
 </head>
+<!-- Parte importante para entrar al sistema -->
 <?php
 	$url = "http://localhost:56131/api";
     if (isset($_REQUEST['Usuario']) && isset($_REQUEST['Contraseña'])){
@@ -52,10 +53,65 @@ if($result == 'true'){
 	}
 }
 ?>
+
+<!-- Verificacion para poder entrar al paypal -->
+<?php
+	$url = "http://localhost:56131/api/";
+    if (isset($_REQUEST['nuevousuario']) && isset($_REQUEST['correonuevo']) && isset($_REQUEST['password1']) && isset($_REQUEST['password2'])){ 
+        $nombre = $_REQUEST['nuevousuario'];
+		$correo = $_REQUEST['correonuevo'];
+		$pass1 = $_REQUEST['password1'];
+		$pass2 = $_REQUEST['password2'];
+		//100 general 60 no igual 40 repetido usu 50 repetido correo
+    
+        $url2 = $url . "reproductor/nuevo";
+        $data = array(
+            'Usuario' => $nombre,
+			'Coreo' => $correo,
+			'Password1' => $pass1,
+			'Password2' => $pass2
+        );
+        $payload = json_encode($data);
+ 
+// Prepare new cURL resource
+$url = $url . 'reproductor/nuevo';
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+ 
+// Set HTTP Header for POST request 
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'Content-Type: application/json',
+    'Content-Length: ' . strlen($payload))
+);
+ 
+// Submit the POST request
+$result = curl_exec($ch);
+ 
+// Close cURL session handle
+curl_close($ch);
+if($result == 100){
+	echo "<script>alert('Error verifique que no envia un campo vacio')</script>";
+}if($result == 60){
+	echo "<script>alert('Contraseñas no concuerdan')</script>";
+}if($result == 40){
+	echo "<script>alert('Usuario repetido')</script>";
+}if($result == 50){
+	echo "<script>alert('Correo repetido')</script>";
+}if($result == 0){
+	setcookie("Usuario",$nombre);
+	setcookie("correo",$correo);
+	setcookie("Contraseña",$pass);
+	header("location: ../paypal.php ");
+}
+}
+?>
 <body style="background: black">
     
 	<div class="container">
-		<div class="col-md-6 col-md-offset-3 col-xs-12">
+		<div class="col-md-6 col-md-offset-1 col-xs-5 mx-auto">
 			
 			<div class="blmd-wrapp">
 				<div class="blmd-color-conatiner ripple-effect-All"></div>
@@ -71,7 +127,7 @@ if($result == 'true'){
 				</div>
 				<div class="blmd-continer">
 
-                                    <form action="Logueo.php" class="clearfix" id="login-form" method="post">
+                        <form action="Logueo.php" class="clearfix" id="login-form" method="post">
 						<h1>Bienvenidos</h1>
 						<div class="col-md-12">
 
@@ -95,31 +151,37 @@ if($result == 'true'){
 
 					</form>
 					
-						<form action="post" class="clearfix form-hidden" id="Register-form">
-							<h1>Pagina de Registro</h1>
+						<form action="Logueo.php" class="clearfix form-hidden" id="Register-form" method="post">
+							<h1>Registrate se parte de CloudSonos</h1>
 							<div class="col-md-12">
 
 								<div class="input-group blmd-form">
 									<div class="blmd-line">
-										<input type="text" name="username" autocomplete="off" id="nuevousuario" class="form-control">
+										<input type="text" name="nuevousuario" autocomplete="off" id="nuevousuario" class="form-control">
 										<label class="blmd-label">Nombre de usuario</label>
 									</div>
 								</div>
 								<div class="input-group blmd-form">
 									<div class="blmd-line">
-										<input type="password" name="password" autocomplete="off" id="password1" class="form-control">
+										<input type="text" name="correonuevo" autocomplete="off" id="correonuevo" class="form-control">
+										<label class="blmd-label">Correo</label>
+									</div>
+								</div>
+								<div class="input-group blmd-form">
+									<div class="blmd-line">
+										<input type="password" name="password1" autocomplete="off" id="password1" class="form-control">
 										<label class="blmd-label">Contraeña</label>
 									</div>
 								</div>
 								<div class="input-group blmd-form">
 									<div class="blmd-line">
-										<input type="password" name="rePassword" autocomplete="off" id="password2" class="form-control">
+										<input type="password" name="password2" autocomplete="off" id="password2" class="form-control">
 										<label class="blmd-label">Repetir Contraseña</label>
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-12 text-center">
-								<button type="button" class="btn btn-blmd ripple-effect btn-warning btn-lg btn-block">Siguiente</button>
+							<button type="submit" class="btn btn-blmd ripple-effect btn-success btn-lg btn-block">Siguiente</button>
 							</div>
 							<br />
 						</form>
