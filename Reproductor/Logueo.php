@@ -101,9 +101,9 @@ if($result == 100){
 }if($result == 50){
 	echo "<script>alert('Correo repetido')</script>";
 }if($result == 0){
-	setcookie("Usuario",$nombre);
-	setcookie("correo",$correo);
-	setcookie("Contraseña",$pass);
+	$_SESSION['usuario'] =$nombre;
+	$_SESSION['correo'] = $correo;
+	$_SESSION['contra'] = $pass1;
 	header("location: ../paypal.php ");
 }
 }
