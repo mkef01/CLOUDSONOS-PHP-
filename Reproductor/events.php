@@ -1,3 +1,36 @@
+<?php
+session_start();
+//if ($_POST){
+  $url = "http://localhost:56131/api/reproductor/eventos";
+  $usu = $_SESSION['usuario'];
+
+  //$url2 = $url . "/login/acceso";
+  $data = array(
+      'usuario' => $usu
+  );
+  $payload = json_encode($data);
+
+// Prepare new cURL resource
+//$url = $url . '/login/acceso';
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+
+// Set HTTP Header for POST request 
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+'Content-Type: application/json',
+'Content-Length: ' . strlen($payload))
+);
+
+// Submit the POST request
+$result = curl_exec($ch);
+$json = json_decode($result);
+// Close cURL session handle
+curl_close($ch);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -89,8 +122,8 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
             
-            <h2 class="text-white h1">News &amp; Events</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="text-white h1">Biblioteca</h2>
+            <p>Disfruta de las canciones que tu quieras en el momento que quieras.</p>
           </div>
         </div>
       </div>
@@ -100,77 +133,21 @@
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
-            </div>
-          </div>
-
+          
+        <?php
+   for($i = 0 ; $i < 5 ; $i++) {
+    echo "<div class='col-md-6 col-lg-4 mb-5' data-aos='fade-up' data-aos-delay='100'>";
+    echo "<a href='#'><img src='images/img_4.jpg' alt='Image' class='img-fluid'></a>";
+    echo "<div class='p-4 bg-white'>";
+    echo "<h2 class='h5 text-black mb-3'><a href='#'>Art Gossip by Mike Charles</a></h2>";
+    echo "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>";
+    echo "</div>";
+    echo "</div>";
+   }  
+          ?> 
+    
         </div>
 
-      </div>
-
-        <div class="container mt-5" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <div class="site-block-27">
-                <ul>
-                  <li><a href="#">&lt;</a></li>
-                  <li class="active"><span>1</span></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">&gt;</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -191,78 +168,61 @@
     </div>
 
     <footer class="site-footer">
+    <div class="bg-light" data-aos="fade">
       <div class="container">
+        <br>
         <div class="row">
-          <div class="col-lg-4">
-            <div class="mb-5">
-              <h3 class="footer-heading mb-4">About Radios</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
-            </div>
-
-            
-            
-          </div>
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="row mb-5">
-              <div class="col-md-12">
-                <h3 class="footer-heading mb-4">Navigations</h3>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">DJs</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Top 20 of the week</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Membership</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
-                <h3 class="footer-heading mb-4">Follow Us</h3>
-
-                <div>
-                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">Watch Live Streaming</h3>
+              <h3 class="footer-heading mb-4" style="color:darkgreen;">WATCH A BRAND NEW VIDEO</h3>
 
               <div class="block-16">
                 <figure>
-                  <img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid rounded">
-                  <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+                  <img src="images/fallout.png" alt="Image placeholder" class="img-fluid rounded" style="witdh:350px;height:350px">
+                  <a href="https://www.youtube.com/watch?v=C6MOKXm8x50" class="play-button popup-vimeo"><span class="icon-play"></span></a>
                 </figure>
               </div>
 
             </div>
-
-            
-
           </div>
-          
+
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4" style="color:darkgreen;">WATCH A BRAND NEW VIDEO</h3>
+
+              <div class="block-16">
+                <figure>
+                  <img src="images/killer.jpg" alt="Image placeholder" class="img-fluid rounded">
+                  <a href="https://www.youtube.com/watch?v=gGdGFtwCNBE" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+                </figure>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4" style="color:darkgreen;">WATCH A BRAND NEW VIDEO</h3>
+              <div class="block-16">
+                <figure>
+                  <img src="images/panic.jpg" alt="Image placeholder" class="img-fluid rounded" style="witdh:350px;height:350px">
+                  <a href="https://www.youtube.com/watch?v=vc6vs-l5dkc" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+                </figure>
+              </div>
+
+            </div>
+          </div>
         </div>
+
+        
+      </div>
+    </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            TODOS LOS DERECHOS RESERVADOS &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> PARA ESTE SITIO <i class="icon-heart text-danger" aria-hidden="true"></i> FOR <a href="https://colorlib.com" target="_blank" >PEACE AND LOVE</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -270,7 +230,6 @@
         </div>
       </div>
     </footer>
-
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>

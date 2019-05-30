@@ -89,8 +89,8 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
             
-            <h2 class="text-white h1">About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="text-white h1">Acerca de nosotros</h2>
+            <p>Conoce a nuestro increible equipo de trabajo.</p>
           </div>
         </div>
       </div>
@@ -100,8 +100,8 @@
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Our DJs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
+            <h2 class="mb-5">Nuestro equipo</h2>
+            <p>Somos un grupo de estudiante de la Universidad Catolica de El Salvador.</p>
           </div>
         </div>
         <div class="row">
@@ -112,9 +112,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light h4">Megan Smith</h2>
-                <span class="d-block mb-2 text-white-opacity-05">DJ at night</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+                <h2 class="mb-2 font-weight-light h4">Victor Osman</h2>
+                <span class="d-block mb-2 text-white-opacity-05">Desarrollador en PHP</span>
+                <p class="mb-4">Estudiante de quinto año de Sistemas, Amante de la codificacion y de los buenos libros.</p>
                 <p>
                   <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -132,9 +132,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-                <span class="d-block mb-2 text-white-opacity-05">DJ at night</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+                <h2 class="mb-2 font-weight-light h4">Elmer Figueroa</h2>
+                <span class="d-block mb-2 text-white-opacity-05">Desarrollador en VS</span>
+                <p class="mb-4">Estudiante de quinto año de Sistemas, apasiado por los sistemas y la musica.</p>
                 <p>
                   <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -152,9 +152,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light h4">Philip Martin</h2>
-                <span class="d-block mb-2 text-white-opacity-05">DJ at night</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+                <h2 class="mb-2 font-weight-light h4">Samuel Paniagua</h2>
+                <span class="d-block mb-2 text-white-opacity-05">Desarrollador en PHP</span>
+                <p class="mb-4">Estudiante de quinto año de Sistemas, amante de los videojuegos y del PHP.</p>
                 <p>
                   <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -172,9 +172,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light h4">Steven Ericson</h2>
-                <span class="d-block mb-2 text-white-opacity-05">DJ at night</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+                <h2 class="mb-2 font-weight-light h4">Joel Figueroa</h2>
+                <span class="d-block mb-2 text-white-opacity-05">Desarrollador en PHP</span>
+                <p class="mb-4">Estudiante de quinto año de Sistemas, amante de los juegos junto a la buena musica.</p>
                 <p>
                   <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -192,9 +192,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light h4">Nathan Dumlao</h2>
-                <span class="d-block mb-2 text-white-opacity-05">DJ at night</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+                <h2 class="mb-2 font-weight-light h4">Brayan Daniel</h2>
+                <span class="d-block mb-2 text-white-opacity-05">Diseñador en CSS</span>
+                <p class="mb-4">Estudiante de ultimo año de sistemas, amante del Rock y el Metal.</p>
                 <p>
                   <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -212,9 +212,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-                <span class="d-block mb-2 text-white-opacity-05">DJ at night</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
+                <h2 class="mb-2 font-weight-light h4">Victor Padilla</h2>
+                <span class="d-block mb-2 text-white-opacity-05">Diseñador en HTML</span>
+                <p class="mb-4">Estudiante de quinto año de Sistemas, experto en HTML.</p>
                 <p>
                   <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
@@ -234,14 +234,13 @@
       <div class="container">
       
         <div class="row">
-          <div class="col-md-12 mb-3" data-aos="fade-up"><h2 class="text-primary h4">Our Office</h2></div>
+          <div class="col-md-12 mb-3" data-aos="fade-up"><h2 class="text-primary h4">Pasion por la Musica.</h2></div>
           <div class="col-lg-5 ml-auto order-lg-2 mb-5" data-aos="fade-up" data-aos-delay="200">
             <img src="images/hero_bg_1.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusamus porro, iusto id iste, quo nulla. Quisquam quia reiciendis iste earum mollitia officiis pariatur, culpa ab rerum quam, sint veritatis?</p>
-            <p>Nobis rem impedit eligendi! Temporibus dolorum rerum quod autem, iusto excepturi distinctio maxime, deserunt, odio veritatis aliquid illo dolorem! Odio quibusdam repellat dolores dolor ipsum perferendis id, quod voluptates amet.</p>
-            <p>Perspiciatis porro cumque dicta laborum laudantium quia et expedita dolorum, quis id facilis repudiandae nostrum nam temporibus dolores impedit tempora! Blanditiis tenetur neque harum molestiae ipsa minus. Nulla nemo, quis.</p>
+            <p class="lead">¿Por qué amamos la música?</p>
+            <p style="text-align:justify">No hay un área del cerebro especializada en comprender la música, sino que apreciarla es una “función superior” que articula muchas regiones del cerebro. La neurocientífica Valorie Salimpoor, a partir de un experimento realizado en McGill College, descubrió que cuando escuchamos música que nos gusta, un área llamada “núcleo accumbens” se conecta con el hipocampo (relacionado con la toma de decisiones) y con la amígdala (el centro de las emociones). Durante la experiencia, el cerebro se inunda de dopamina, la “hormona de la recompensa” que se libera también con estímulos como el sexo, ciertas drogas o la comida deliciosa: escuchar música puede ser adictivo.</p>
           </div>
           
         </div>
@@ -249,55 +248,7 @@
     </div>    
 
     
-    
-
-    <div class="site-section">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
-            <h2 class="mb-5">Weekly Radio Program</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
-          </div>
-        </div>
-        
-        <div class="site-block-retro d-block d-md-flex">
-
-          <a href="#" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
-            <div class="image" style="background-image: url('images/img_2.jpg');"></div>
-            <div class="unit-9-content">
-              <h2>Classic Songs For Classic People</h2>
-              <span>Friday 1:00pm &mdash; 2:30pm</span>
-            </div>
-          </a>
-
-          <div class="col2 ml-auto">
-
-            <a href="#" class="col2-row1 unit-9 no-height" data-aos="fade-up" data-aos-delay="200">
-              <div class="image" style="background-image: url('images/img_3.jpg');"></div>
-              <div class="unit-9-content">
-                <h2>Classic Songs For Classic People</h2>
-                <span>Friday 1:00pm &mdash; 2:30pm</span>
-              </div>
-            </a>
-
-            <a href="#" class="col2-row2 unit-9 no-height" data-aos="fade-up" data-aos-delay="300">
-              <div class="image" style="background-image: url('images/img_1.jpg');"></div>
-              <div class="unit-9-content">
-                <h2>Classic Songs For Classic People</h2>
-                <span>Friday 1:00pm &mdash; 2:30pm</span>
-              </div>
-            </a>
-
-          </div>
-
-        </div>
-        
-      </div>
-    </div>
-
-    
+  
     
     <div class="bg-primary" data-aos="fade">
       <div class="container">
@@ -312,79 +263,63 @@
       </div>
     </div>
 
+
     <footer class="site-footer">
+    <div class="bg-light" data-aos="fade">
       <div class="container">
+        <br>
         <div class="row">
-          <div class="col-lg-4">
-            <div class="mb-5">
-              <h3 class="footer-heading mb-4">About Radios</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
-            </div>
-
-            
-            
-          </div>
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="row mb-5">
-              <div class="col-md-12">
-                <h3 class="footer-heading mb-4">Navigations</h3>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">DJs</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Top 20 of the week</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Membership</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
-                <h3 class="footer-heading mb-4">Follow Us</h3>
-
-                <div>
-                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">Watch Live Streaming</h3>
+              <h3 class="footer-heading mb-4" style="color:darkgreen;">WATCH A BRAND NEW VIDEO</h3>
 
               <div class="block-16">
                 <figure>
-                  <img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid rounded">
-                  <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+                  <img src="images/strokes.jpeg" alt="Image placeholder" class="img-fluid rounded" style="witdh:350px;height:350px">
+                  <a href="https://www.youtube.com/watch?v=b8-tXG8KrWs" class="play-button popup-vimeo"><span class="icon-play"></span></a>
                 </figure>
               </div>
 
             </div>
-
-            
-
           </div>
-          
+
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4" style="color:darkgreen;">WATCH A BRAND NEW VIDEO</h3>
+
+              <div class="block-16">
+                <figure>
+                  <img src="images/avicii.jpg" alt="Image placeholder" class="img-fluid rounded">
+                  <a href="https://www.youtube.com/watch?v=Qc9c12q3mrc" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+                </figure>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4" style="color:darkgreen;">WATCH A BRAND NEW VIDEO</h3>
+              <div class="block-16">
+                <figure>
+                  <img src="images/shelter.jpg" alt="Image placeholder" class="img-fluid rounded" style="witdh:350px;height:350px">
+                  <a href="https://www.youtube.com/watch?v=fzQ6gRAEoy0" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+                </figure>
+              </div>
+
+            </div>
+          </div>
         </div>
+
+        
+      </div>
+    </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            TODOS LOS DERECHOS RESERVADOS &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> PARA ESTE SITIO <i class="icon-heart text-danger" aria-hidden="true"></i> FOR <a href="https://colorlib.com" target="_blank" >PEACE AND LOVE</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
