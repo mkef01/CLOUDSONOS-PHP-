@@ -1,8 +1,9 @@
 <?php
-//if ($_POST){
+session_start();
+if ($_SESSION['usuario'] != ""){
   $url = "http://localhost:56131/api/reproductor/album";
-  $al = $_POST['album'];
-  $art = $_POST['artista'];
+  $al = $_REQUEST['album'];
+  $art = $_REQUEST['artista'];
 
   //$url2 = $url . "/login/acceso";
   $data = array(
@@ -34,8 +35,8 @@ curl_close($ch);
 //---------------------------------------------------------------------------------------------------------
 //Playlist
 $url2 = "http://localhost:56131/api/reproductor/playlist";
-$alb = $_POST['album'];
-$arti = $_POST['artista'];
+$alb = $_REQUEST['album'];
+$arti = $_REQUEST['artista'];
 
 $data2 = array(
     'album' => $alb,
@@ -62,10 +63,10 @@ $playlist = json_decode($result2);
 // Close cURL session handle
 curl_close($ch2);
 
-// }
-// else{
-//   header('Location: index.php');
-// }
+ }
+else{
+  header('Location: Logueo.php');
+}
 
     //  echo "<pre>";
     //   print_r($json);
@@ -88,6 +89,7 @@ curl_close($ch2);
       if(isset($_GET['param'])){
 
           $parametro = $_GET['param'];
+          
           if ($parametro == 'true'){
             echo "<script>alert('Guardado en Favoritos')</script>";
             //header("location: Album.php");
@@ -108,6 +110,7 @@ curl_close($ch2);
         <button class="btn" id="btnplay">Play</button>
         <form action="bookmark.php" method="post">
         <input hidden name="alb" value="<?php echo $al ?>">
+        <input hidden name="art" value="<?php echo $art ?>">
         <button class="fas fa-heart" type="submit">Bookmark</button>
         </form>
         <div class="bookmark">

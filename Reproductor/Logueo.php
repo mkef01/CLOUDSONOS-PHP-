@@ -46,7 +46,7 @@ $result = curl_exec($ch);
 curl_close($ch);
 if($result == 'true'){
 	$_SESSION['usuario'] = $nombre;
-	header("location: Reproductor\index.php");
+	header("location: index.php");
 }else{
 	echo "<script>alert('Usuario o contraseña son incorrectos')</script>";
 	//header("location: Logueo.php");

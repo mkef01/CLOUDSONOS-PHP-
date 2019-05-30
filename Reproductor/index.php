@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-// if ($_SESSION['usuario'] == "") {
-//     header("Location: Logueo.php");
-//     exit;
-// }
+if ($_SESSION['usuario'] == "") {
+    header("Location: Logueo.php");
+     exit;
+ }
 ?>
 
 <?php

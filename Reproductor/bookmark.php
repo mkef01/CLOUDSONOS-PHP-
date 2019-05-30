@@ -1,6 +1,7 @@
 <?php
 session_start();
   $album = $_REQUEST['alb'];
+  $artista = $_REQUEST['art'];
   $usu = $_SESSION['usuario'];
    $url = "http://localhost:56131/api/reproductor/bookmark";
 
@@ -32,10 +33,10 @@ curl_close($ch2);
 
 if($result2 == 'true'){
 	echo "<script>alert('Guardado a Favoritos')</script>";
-	header("location: Album.php?param=true");
+	header("location: Album.php?param=true&album=$album&artista=$artista");
 }else{
 	echo "<script>alert('Error no se pudoguardar el album')</script>";
-	header("location: Album.php?param=false");
+	header("location: Album.php?param=false&album=$album&artista=$artista");
 	}
 
 ?>
