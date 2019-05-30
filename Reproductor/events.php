@@ -6,7 +6,7 @@ session_start();
 
   //$url2 = $url . "/login/acceso";
   $data = array(
-      'usuario' => $usu
+      'nombre' => $usu
   );
   $payload = json_encode($data);
 
@@ -135,14 +135,18 @@ curl_close($ch);
         <div class="row">
           
         <?php
-   for($i = 0 ; $i < 5 ; $i++) {
-    echo "<div class='col-md-6 col-lg-4 mb-5' data-aos='fade-up' data-aos-delay='100'>";
-    echo "<a href='#'><img src='images/img_4.jpg' alt='Image' class='img-fluid'></a>";
+   foreach($json as $obj) {
+    echo "<div class='col-md-6 col-lg-4 mb-5' data-aos='fade-up' data-aos-delay='100'>"; 
+    echo "<form action='Album.php' method='post'>";
+    echo "<a href='#'><img src='$obj->banner' alt='Image' class='img-fluid' style='witdh:350px;height:350px'></a>";
     echo "<div class='p-4 bg-white'>";
-    echo "<h2 class='h5 text-black mb-3'><a href='#'>Art Gossip by Mike Charles</a></h2>";
-    echo "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>";
+    echo "<input class= 'btn btn-secondary' readonly name='album' value='$obj->album' type='submit'/><br>";
+    echo "<input hidden readonly name='artista' value='$obj->banda'/>";
+    echo "<p style='text-align:justify'>$obj->descripcion</p>";
     echo "</div>";
+    echo "</form>";
     echo "</div>";
+    
    }  
           ?> 
     
