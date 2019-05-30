@@ -7,9 +7,9 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['correo']) && isset($_SESSION[
   $pass1 = $_SESSION['contra'];
   $url2 = $url . "reproductor/insertar";
   $data = array(
-    'Contraseña' => $nombre,
+    'Contraseña' => $pass1,
 		'Correo' => $correo,
-    'Usuario1' => $pass1
+    'Usuario1' => $nombre
   );
   $payload = json_encode($data);
   $url = $url . 'reproductor/insertar';
@@ -26,6 +26,8 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['correo']) && isset($_SESSION[
  );
  $result = curl_exec($ch);
  curl_close($ch);
+session_unset();    // borrar variables de sesion
+session_destroy();
 }
 ?>
 <!DOCTYPE HTML>
