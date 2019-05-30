@@ -92,11 +92,9 @@ else{
           
           if ($parametro == 'true'){
             echo "<script>alert('Guardado en Favoritos')</script>";
-            //header("location: Album.php");
           }
           else {
             echo "<script>alert('Error no se pudo guardar el album')</script>";
-            //header("location: Album.php");
           }
       }
 
@@ -107,20 +105,14 @@ else{
   <div class="album-info">
     <div class="album-art"><img src="<?php echo $json[0]->UrlAlbum ?>"/>
       <div class="actions">
-        <button class="btn" id="btnplay">Play</button>
         <form action="bookmark.php" method="post">
         <input hidden name="alb" value="<?php echo $al ?>">
         <input hidden name="art" value="<?php echo $art ?>">
-        <button class="fas fa-heart" type="submit">Bookmark</button>
+        <button class="button fas fa-heart" type="submit"> Bookmark</button>
         </form>
-        <div class="bookmark">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="#faa800" height="24" viewbox="0 0 24 24" width="24">
-            <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path>
-            <path d="M0 0h24v24H0z" fill="none"></path>
-          </svg>
-        </div>
       </div>
     </div>
+    <br/>
     <div class="album-details">
       <h2> <img src="<?php echo $json[0]->UrlBanda ?>"/> <?php echo $art ?></h2>
       <h1><?php echo $al ?></h1><?php echo $json[0]->Genero."<br/>" ?> &copy; <?php echo $json[0]->Año." "; echo $json[0]->Discografia?>

@@ -4,11 +4,11 @@ function init(){
     var audio = document.getElementById('audio');
     var playlist = document.getElementById('playlist');
     var tracks = playlist.getElementsByTagName('a');
-    var BtnPlay = document.getElementById('btnplay');
+ 
    
     var nextTrack = 0;
     audio.volume = 1.00;
-    BtnPlay.addEventListener("click", playSong);
+
    
 
     audio.play();
@@ -67,7 +67,5 @@ function run(song, audio, link){
         audio.play();
 }
 
-function playSong(){
-     audio.play();
- }
+
 
