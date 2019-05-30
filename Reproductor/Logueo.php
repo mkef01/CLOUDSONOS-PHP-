@@ -46,7 +46,7 @@ $result = curl_exec($ch);
 curl_close($ch);
 if($result == 'true'){
 	$_SESSION['usuario'] = $nombre;
-	header("location: index.php");
+	header("location: Reproductor\index.php");
 }else{
 	echo "<script>alert('Usuario o contraseña son incorrectos')</script>";
 	//header("location: Logueo.php");
@@ -149,7 +149,7 @@ if($result == 100){
 						</div>
 						<br />
 
-					</form>
+						</form>
 					
 						<form action="Logueo.php" class="clearfix form-hidden" id="Register-form" method="post">
 							<h1>Registrate se parte de CloudSonos</h1>

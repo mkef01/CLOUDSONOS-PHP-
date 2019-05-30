@@ -55,5 +55,15 @@ session_destroy();
         
       </div>
 </div>
+<script>
+    $(document).ready(function(){
+
+        <?php 
+          sleep(5);
+          header("location: Reproductor\index.php ");  
+        ?>
+
+    });
+</script>
 </body>
 </html>
