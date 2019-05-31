@@ -94,7 +94,7 @@ curl_close($ch2);
         <div class="container py-1">
           <div class="row align-items-center">
             <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>Radios<span class="text-primary">.</span></strong></a></h1>
+              <h1 class="mb-0"><a class="text-white h2 mb-0"><strong>CloudSonos<span class="text-primary">.</span></strong></a></h1>
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -106,7 +106,7 @@ curl_close($ch2);
                     <a href="index.php">Inicio</a>
                   </li>
                   <li><a href="events.php">Biblioteca</a></li>
-                  <li><a href="about.php">Acerca de Nosotros/a></li>
+                  <li><a href="about.php">Acerca de Nosotros</li>
                   <li><a href="contact.php">Contacto</a></li>
                 </ul>
               </nav>
@@ -132,7 +132,7 @@ curl_close($ch2);
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
             <h1>Escucha &mdash; Buena musica para tus oidos</h1>
-            <p class="mb-4"><span class="small">Las mejores canciones solo para ti.</span></p>
+            <p class="mb-4"><span class="small">Las mejores canciones solo para ti</span></p>
 
             <div id="playerContainer"></div>
 
@@ -164,97 +164,15 @@ curl_close($ch2);
    </div>
  </div>
 </div>  
-    
-    <div class="site-section bg-light block-13">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Love By Our Listeners</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
-          </div>
-        </div>
-        <div class="nonloop-block-13 owl-carousel">
-          
-          <div class="text-center p-3 p-md-5 bg-white">
-            <div class="mb-4">            
-              <img src="images/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
-            </div>
-            <div class="">
-              <h3 class="font-weight-light h5">Megan Smith</h3>
-              <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-            </div>
-          </div>
+        
 
-          <div class="text-center p-3 p-md-5 bg-white">
-            <div class="mb-4">            
-              <img src="images/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
-            </div>
-            <div class="">
-              <h3 class="font-weight-light h5">Brooke Cagle</h3>
-              <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-            </div>
-          </div>
-
-          <div class="text-center p-3 p-md-5 bg-white">
-            <div class="mb-4">            
-              <img src="images/person_3.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
-            </div>
-            <div class="">
-              <h3 class="font-weight-light h5">Philip Martin</h3>
-              <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-            </div>
-          </div>
-
-          <div class="text-center p-3 p-md-5 bg-white">
-            <div class="mb-4">            
-              <img src="images/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
-            </div>
-            <div class="">
-              <h3 class="font-weight-light h5">Steven Ericson</h3>
-              <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-            </div>
-          </div>
-
-          <div class="text-center p-3 p-md-5 bg-white">
-            <div class="mb-4">            
-              <img src="images/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
-            </div>
-            <div class="">
-              <h3 class="font-weight-light h5">Nathan Dumlao</h3>
-              <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-            </div>
-          </div>
-
-          <div class="text-center p-3 p-md-5 bg-white">
-            <div class="mb-4">            
-              <img src="images/person_4.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
-            </div>
-            <div class="">
-              <h3 class="font-weight-light h5">Brook Smith</h3>
-              <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>  
-    
-
-    <div class="site-blocks-cover overlay inner-page-cover subscribe" style="background-image: url(images/hero_bg_4.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay inner-page-cover subscribe" style="background-image: url(images/escarabajo.jpg);" data-aos="fade" data-stellar-background-ratio="0.5" style="witdh:600px;height:600px">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <h2>Subscribe</h2>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit nihil saepe libero sit odio obcaecati veniam.</p>
-            <form action="#" method="post" class="site-block-subscribe">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter your email" aria-label="Enter Email" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
-                  </div>
-                </div>
-              </form>
+            <h2>Amamos la musica tanto como tu</h2>
+            <p class="mb-5">Descrube mas acerca de los artistas que estan trabajando con nosotros en las siguientes secciones del sitio.</p>
           </div>
         </div>
       </div>
@@ -295,12 +213,12 @@ curl_close($ch2);
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
             <h2 class="mb-5">Noticias &amp; Eventos</h2>
-            <p>Descubre acerca de algunos de los mejores eventos en el mundo de la musica.</p>
+            <p>Descubre acerca de algunos de los mejores eventos en el mundo de la musica</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <a href="#"><img src="images/coachella.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px" ></a>
+            <a href="#"><img src="images/coachella.jpg" alt="Image" class="img-fluid" style="witdh:250px;height:250px" ></a>
             <div class="p-4 bg-white">
               <span class="d-block text-secondary small text-uppercase">Ultimas dos semanas de abril</span>
               <h2 class="h5 text-black mb-3"><a href="https://live.coachella.com/">Coachella</a></h2>
@@ -308,7 +226,7 @@ curl_close($ch2);
             </div>
           </div>
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <a href="#"><img src="images/land.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px" ></a>
+            <a href="#"><img src="images/land.jpg" alt="Image" class="img-fluid" style="witdh:250px;height:250px" ></a>
             <div class="p-4 bg-white">
               <span class="d-block text-secondary small text-uppercase">Fechas variadas</span>
               <h2 class="h5 text-black mb-3"><a href="https://www.tomorrowland.com/global/">TomorrowLand</a></h2>
@@ -316,7 +234,7 @@ curl_close($ch2);
             </div>
           </div>
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="#"><img src="images/viña.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px" ></a>
+            <a href="#"><img src="images/viña.jpg" alt="Image" class="img-fluid" style="witdh:250px;height:250px" ></a>
             <div class="p-4 bg-white">
               <span class="d-block text-secondary small text-uppercase">Entre Febrero y Marzo</span>
               <h2 class="h5 text-black mb-3"><a href="http://www.festivaldevinachile.cl/">Viña del Mar</a></h2>
