@@ -200,12 +200,6 @@ a {
     height: 500px !important;
     margin-bottom: 15px; } }
 
-.site-footer {
-  padding: 4em 0;
-  background: #333333; }
-  @media (min-width: 768px) {
-    .site-footer {
-      padding: 7em 0; } }
   .site-footer p {
     color: #737373; }
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {

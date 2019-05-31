@@ -94,7 +94,7 @@ curl_close($ch2);
         <div class="container py-1">
           <div class="row align-items-center">
             <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>RADIOS<span class="text-primary">.</span></strong></a></h1>
+              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>Radios<span class="text-primary">.</span></strong></a></h1>
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -103,27 +103,11 @@ curl_close($ch2);
 
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                   <li class="active">
-                    <a href="index.php">Home</a>
+                    <a href="index.php">Inicio</a>
                   </li>
-                  <li class="has-children">
-                    <a href="#">Trending</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="#">Top 20 of The Week</a></li>
-                      <li><a href="#">Featured Artist</a></li>
-                      <li><a href="#">Interviews</a></li>
-                      <li class="has-children">
-                        <a href="#">Sub Menu</a>
-                        <ul class="dropdown">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="events.php">Events</a></li>
-                  <li><a href="about.php">About</a></li>
-                  <li><a href="contact.php">Contact</a></li>
+                  <li><a href="events.php">Biblioteca</a></li>
+                  <li><a href="about.php">Acerca de Nosotros/a></li>
+                  <li><a href="contact.php">Contacto</a></li>
                 </ul>
               </nav>
             </div>
@@ -147,8 +131,8 @@ curl_close($ch2);
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-            <h1>Listen &mdash; Random Songs for your soul</h1>
-            <p class="mb-4"><span class="small">ONLY GOOD VIBES FOR YOU</span></p>
+            <h1>Escucha &mdash; Buena musica para tus oidos</h1>
+            <p class="mb-4"><span class="small">Las mejores canciones solo para ti.</span></p>
 
             <div id="playerContainer"></div>
 
@@ -180,53 +164,6 @@ curl_close($ch2);
    </div>
  </div>
 </div>  
-
-    <div class="site-section">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
-            <h2 class="mb-5">Weekly Radio Program</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
-          </div>
-        </div>
-        
-        <div class="site-block-retro d-block d-md-flex">
-
-          <a href="#" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
-            <div class="image" style="background-image: url('images/img_2.jpg');"></div>
-            <div class="unit-9-content">
-              <h2>Classic Songs For Classic People</h2>
-              <span>Friday 1:00pm &mdash; 2:30pm</span>
-            </div>
-          </a>
-
-          <div class="col2 ml-auto">
-
-            <a href="#" class="col2-row1 unit-9 no-height" data-aos="fade-up" data-aos-delay="200">
-              <div class="image" style="background-image: url('images/img_3.jpg');"></div>
-              <div class="unit-9-content">
-                <h2>Classic Songs For Classic People</h2>
-                <span>Friday 1:00pm &mdash; 2:30pm</span>
-              </div>
-            </a>
-
-            <a href="#" class="col2-row2 unit-9 no-height" data-aos="fade-up" data-aos-delay="300">
-              <div class="image" style="background-image: url('images/img_1.jpg');"></div>
-              <div class="unit-9-content">
-                <h2>Classic Songs For Classic People</h2>
-                <span>Friday 1:00pm &mdash; 2:30pm</span>
-              </div>
-            </a>
-
-          </div>
-
-        </div>
-        
-      </div>
-    </div>
-
     
     <div class="site-section bg-light block-13">
       <div class="container" data-aos="fade-up">
@@ -357,33 +294,33 @@ curl_close($ch2);
       <div class="container">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
-            <h2 class="mb-5">News &amp; Events</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
+            <h2 class="mb-5">Noticias &amp; Eventos</h2>
+            <p>Descubre acerca de algunos de los mejores eventos en el mundo de la musica.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
+            <a href="#"><img src="images/coachella.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px" ></a>
             <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
+              <span class="d-block text-secondary small text-uppercase">Ultimas dos semanas de abril</span>
+              <h2 class="h5 text-black mb-3"><a href="https://live.coachella.com/">Coachella</a></h2>
+              <p style="text-align:justify">El Festival de Música y Artes de Coachella Valley (en inglés Coachella Valley Music and Arts Festival, también conocido simplemente como Coachella Festival) es un gran festival de música que se desarrolla durante tres días en la última semana del mes de abril (dos días hasta la edición de 2007) y tiene lugar en Indio, California, Estados Unidos.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+            <a href="#"><img src="images/land.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px" ></a>
             <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
+              <span class="d-block text-secondary small text-uppercase">Fechas variadas</span>
+              <h2 class="h5 text-black mb-3"><a href="https://www.tomorrowland.com/global/">TomorrowLand</a></h2>
+              <p style="text-align:justify">Tomorrowland es un festival de música electrónica de baile celebrado anualmente en la localidad de Boom (Bélgica). El festival es organizado por ID&T y se calcula que anualmente acuden más de 400.000 personas de casi 200 nacionalidades distintas.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+            <a href="#"><img src="images/viña.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px" ></a>
             <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt, voluptatum reprehenderit deserunt illum rem.</p>
+              <span class="d-block text-secondary small text-uppercase">Entre Febrero y Marzo</span>
+              <h2 class="h5 text-black mb-3"><a href="http://www.festivaldevinachile.cl/">Viña del Mar</a></h2>
+              <p  style="text-align:justify"> El Festival Internacional de la Canción de Viña del Mar, o Festival de Viña, es un certamen musical organizado por el municipio de Viña del Mar, Región de Valparaíso, Chile. Se lleva a cabo cada año durante la última semana del mes de febrero en el Anfiteatro de la Quinta Vergara desde el 21 de febrero de 1960.​ Es, además, el festival de música más grande, importante y reconocido en el continente americano.</p>
             </div>
           </div>
         </div>
@@ -455,7 +392,7 @@ curl_close($ch2);
         
       </div>
     </div>
-        <div class="row pt-5 mt-5 text-center">
+        <div class="row pt-5 mt-5 text-center" style="background-color:#000;">
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

@@ -35,7 +35,7 @@
         <div class="container py-1">
           <div class="row align-items-center">
             <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>RADIOS<span class="text-primary">.</span></strong></a></h1>
+              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>Radios<span class="text-primary">.</span></strong></a></h1>
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -44,27 +44,11 @@
 
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                   <li>
-                    <a href="index.php">Home</a>
+                    <a href="index.php">Inicio</a>
                   </li>
-                  <li class="has-children">
-                    <a href="#">Trending</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="#">Top 20 of The Week</a></li>
-                      <li><a href="#">Featured Artist</a></li>
-                      <li><a href="#">Interviews</a></li>
-                      <li class="has-children">
-                        <a href="#">Sub Menu</a>
-                        <ul class="dropdown">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="events.php">Events</a></li>
-                  <li class="active"><a href="about.php">About</a></li>
-                  <li><a href="contact.php">Contact</a></li>
+                  <li><a href="events.php">Biblioteca</a></li>
+                  <li class="active"><a href="about.php">Acerca de nosotros</a></li>
+                  <li><a href="contact.php">Contacto</a></li>
                 </ul>
               </nav>
             </div>
@@ -315,7 +299,7 @@
         
       </div>
     </div>
-        <div class="row pt-5 mt-5 text-center">
+        <div class="row pt-5 mt-5 text-center" style="background-color:#000;">
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
