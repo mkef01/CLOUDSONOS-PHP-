@@ -88,38 +88,45 @@
           
             
           
-            <form action="#" class="p-5 bg-white">
+            <form action="sugerencias.php" method="post" class="p-5 bg-white">
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="fullname">Nombre Completo</label>
-                  <input type="text" id="fullname" class="form-control" placeholder="Nombre Completo">
+                  <input type="text" id="Nombre" name="Nombre" class="form-control" placeholder="Nombre Completo">
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="Email">
+                  <input type="email" id="Correo" name="Correo" class="form-control" placeholder="Email">
                 </div>
               </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Asunto</label>
-                  <input type="text" id="subject" class="form-control" placeholder="Asunto">
-                </div>
-              </div>
-              
-
+          
+        
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="message">Mensanje</label> 
-                  <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Escribenos tu Mensaje"></textarea>
+                  <input id="mensaje" name="mensaje" class="form-control" placeholder="Escribenos tu Mensaje">
                 </div>
               </div>
+    
+             <?php
+             if (isset($_GET["param"])){
+
+            echo  "<div class='row form-group'>";
+            echo  "<div class='col-md-12'>";
+            echo  "<label class='font-weight-bold' for='email'>Mensaje Enviado!!!</label>";
+            echo  "</div>";
+            echo  "</div>";
+            
+          }
+            
+             ?>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send" class="btn btn-primary  py-2 px-4 rounded-0">
+                  <button type="submit"  class="btn btn-primary  py-2 px-4 rounded-0">Enviar</button>
                 </div>
               </div>
 
