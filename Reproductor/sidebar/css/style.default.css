@@ -338,17 +338,18 @@ button, input {
 *     SIDEBAR
 * ==========================================================
 */
-nav.side-navbar {
+ nav.side-navbar {
 	background: #F8F8FF;
 	min-width: 250px;
 	max-width: 250px;
 	color: #686a76;
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-	z-index: 999;
+  z-index: 999;
+  /* display: block!important; */
 	/*==== Sidebar Header ====*/
 	/*==== Sidebar Menu ====*/
 	/*==== Shrinked Sidebar ====*/
-}
+} 
 
 nav.side-navbar a {
   color: inherit;
@@ -413,11 +414,11 @@ nav.side-navbar span.heading {
 }
 
 nav.side-navbar ul {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 nav.side-navbar ul a {
-  padding: 10px 15px;
+  padding: 15px 15px;
   text-decoration: none;
   display: block;
   font-weight: 300;
@@ -431,7 +432,7 @@ nav.side-navbar ul a:hover {
 }
 
 nav.side-navbar ul li.active a {
-  background: #EEF5F9;
+  background: #f8f8ff;
 }
 
 nav.side-navbar ul li.active a:hover {
@@ -447,29 +448,54 @@ nav.side-navbar ul ul a {
   background: #EEF5F9;
 }
 
-@media only screen and(min-width:768px) {
+/* Mi sidebar */
+
+/*Esto es para moviles */
+
+@media only screen and(max-width: 767px) {
+  
+   
+      
+    
+}
+
+/* nav.side-navbar.shrinked {
+  display: none!important;
+}
+
+nav.side-navbar {
+  display: none!important;
+} */
+
+
+  
+
+
+/*Esto es para Moviles */
+
+
+/* @media only screen and(min-width:768px) {
 
   nav.side-navbar.shrinked {
     min-width: 90px;
     max-width: 130px;
-    text-align: center;
   }
+
+  nav.side-navbar {
+    margin-left: -90px;
+    min-width: 90px;
+    max-width: 90px;
 }
 
+}  */
 
-/*Esto es para moviles */
-nav.side-navbar.shrinked {
-  display: none;
-}
 
-nav.side-navbar {
-  display: none;
-}
-/*Esto es para Moviles*/
 
 
 nav.side-navbar.shrinked span.heading {
   margin: 0;
+  padding-left: 80px;
+  text-align: center!important;
 }
 
 nav.side-navbar.shrinked a {
@@ -478,6 +504,7 @@ nav.side-navbar.shrinked a {
   font-size: 0.8em;
   color: #aaa;
   transition: color 0.3s, background 0.3s;
+  text-align: center;
 }
 
 nav.side-navbar.shrinked a[data-toggle="collapse"]::before {
@@ -517,16 +544,17 @@ nav.side-navbar.shrinked .sidebar-header .title {
 }
 
 /* SIDBAR MEDIAQUERIES ----------------------------------- */
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   nav.side-navbar {
     margin-left: -90px;
     min-width: 90px;
     max-width: 90px;
     text-align: center;
+    display: none;
   }
-  nav.side-navbar span.heading {
+  /* nav.side-navbar span.heading {
     margin: 0;
-  }
+  } */
   nav.side-navbar ul a {
     padding: 15px 10px;
     border: none;
@@ -573,6 +601,12 @@ nav.side-navbar.shrinked .sidebar-header .title {
   .content-inner.active {
     width: calc(100% - 90px);
   }
+}
+
+
+nav.side-navbar span.heading {
+  margin: 0;
+  padding-left: 80px;
 }
 
 /*
