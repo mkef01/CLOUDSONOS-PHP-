@@ -155,7 +155,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
               <div class="team-member">
 
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+                <img src="images/ks2.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px">
 
                 <div class="text">
 
@@ -163,9 +163,9 @@
                   <span class="d-block mb-2 text-white-opacity-05">Desarrollador en PHP</span>
                   <p class="mb-4">Estudiante de quinto año de Sistemas, Amante de la codificacion y de los buenos libros.</p>
                   <p>
-                    <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
+                    <a href="https://www.facebook.com/" class="text-white p-2"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/" class="text-white p-2"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/" class="text-white p-2"><span class="icon-linkedin"></span></a>
                   </p>
                 </div>
 
@@ -175,7 +175,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
               <div class="team-member">
 
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+                <img src="images/elmer.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px">
 
                 <div class="text">
 
@@ -183,9 +183,9 @@
                   <span class="d-block mb-2 text-white-opacity-05">Desarrollador en VS</span>
                   <p class="mb-4">Estudiante de quinto año de Sistemas, apasiado por los sistemas y la musica.</p>
                   <p>
-                    <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
+                    <a href="https://www.facebook.com/" class="text-white p-2"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/" class="text-white p-2"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/" class="text-white p-2"><span class="icon-linkedin"></span></a>
                   </p>
                 </div>
 
@@ -195,17 +195,17 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
               <div class="team-member">
 
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+                <img src="images/purdy.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px">
 
                 <div class="text">
 
                   <h2 class="mb-2 font-weight-light h4">Samuel Paniagua</h2>
                   <span class="d-block mb-2 text-white-opacity-05">Desarrollador en PHP</span>
-                  <p class="mb-4">Estudiante de quinto año de Sistemas, amante de los videojuegos y del PHP.</p>
+                  <p class="mb-4">Estudiante de quinto año de Sistemas, amante de los videojuegos y del PHP.<p>
                   <p>
-                    <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
+                    <a href="https://www.facebook.com/" class="text-white p-2"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/" class="text-white p-2"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/" class="text-white p-2"><span class="icon-linkedin"></span></a>
                   </p>
                 </div>
 
@@ -215,7 +215,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
               <div class="team-member">
 
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid">
+                <img src="images/joel.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px">
 
                 <div class="text">
 
@@ -223,9 +223,9 @@
                   <span class="d-block mb-2 text-white-opacity-05">Desarrollador en PHP</span>
                   <p class="mb-4">Estudiante de quinto año de Sistemas, amante de los juegos junto a la buena musica.</p>
                   <p>
-                    <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
+                    <a href="https://www.facebook.com/" class="text-white p-2"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/" class="text-white p-2"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/" class="text-white p-2"><span class="icon-linkedin"></span></a>
                   </p>
                 </div>
 
@@ -235,7 +235,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
               <div class="team-member">
 
-                <img src="images/person_5.jpg" alt="Image" class="img-fluid">
+                <img src="images/brayan2.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px">
 
                 <div class="text">
 
@@ -243,9 +243,9 @@
                   <span class="d-block mb-2 text-white-opacity-05">Diseñador en CSS</span>
                   <p class="mb-4">Estudiante de ultimo año de sistemas, amante del Rock y el Metal.</p>
                   <p>
-                    <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
+                    <a href="https://www.facebook.com/" class="text-white p-2"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/" class="text-white p-2"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/" class="text-white p-2"><span class="icon-linkedin"></span></a>
                   </p>
                 </div>
 
@@ -255,7 +255,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
               <div class="team-member">
 
-                <img src="images/person_6.jpg" alt="Image" class="img-fluid">
+                <img src="images/padilla.jpg" alt="Image" class="img-fluid" style="witdh:300px;height:300px">
 
                 <div class="text">
 
@@ -263,9 +263,9 @@
                   <span class="d-block mb-2 text-white-opacity-05">Diseñador en HTML</span>
                   <p class="mb-4">Estudiante de quinto año de Sistemas, experto en HTML.</p>
                   <p>
-                    <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                    <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
+                    <a href="https://www.facebook.com/" class="text-white p-2"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/" class="text-white p-2"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/" class="text-white p-2"><span class="icon-linkedin"></span></a>
                   </p>
                 </div>
 
