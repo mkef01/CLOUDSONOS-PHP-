@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['usuario']) && isset($_SESSION['correo']) && isset($_SESSION['contra'])){
-  $url = "http://localhost:56131/api/";
+  $url = "http://cloudsonos.azurewebsites.net/api/";
   $nombre = $_SESSION['usuario'];
   $correo = $_SESSION['correo'];
   $pass1 = $_SESSION['contra'];
@@ -56,7 +56,7 @@ if( isset($_POST["Nombre"]) && isset($_POST["Correo"]) && isset($_POST["mensaje"
   $correo = $_SESSION['correo'];
 
     
-$url = "http://localhost:56131/api/reproductor/confirmacion";
+$url = "http://cloudsonos.azurewebsites.net/api/reproductor/confirmacion";
 
   //$url2 = $url . "/login/acceso";
   $data = array(

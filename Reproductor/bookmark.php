@@ -3,7 +3,7 @@ session_start();
   $album = $_REQUEST['alb'];
   $artista = $_REQUEST['art'];
   $usu = $_SESSION['usuario'];
-   $url = "http://localhost:56131/api/reproductor/bookmark";
+   $url = "http://cloudsonos.azurewebsites.net/api/reproductor/bookmark";
 
 
   $data2 = array(

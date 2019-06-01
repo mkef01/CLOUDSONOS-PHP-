@@ -8,7 +8,7 @@ if ($_SESSION['usuario'] == "") {
 ?>
 
 <?php
-$url = "http://localhost:56131/api/reproductor/index";
+$url = "http://cloudsonos.azurewebsites.net/api/reproductor/index";
 
 //$url2 = $url . "/login/acceso";
 
@@ -38,7 +38,7 @@ curl_close($ch);
 
 <!-- API Artistas -->
 <?php
-$url2 = "http://localhost:56131/api/reproductor/artistas";
+$url2 = "http://cloudsonos.azurewebsites.net/api/reproductor/artistas";
 
 //$url2 = $url . "/login/acceso";
 

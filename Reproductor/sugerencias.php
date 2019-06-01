@@ -5,7 +5,7 @@ $name = $_POST["Nombre"];
 $courrier= $_POST["Correo"];
 $message= $_POST["mensaje"];
     
-$url = "http://localhost:56131/api/reproductor/correo";
+$url = "http://cloudsonos.azurewebsites.net/api/reproductor/correo";
 
   //$url2 = $url . "/login/acceso";
   $data = array(

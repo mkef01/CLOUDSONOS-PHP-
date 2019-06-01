@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION['usuario'] != ""){
-  $url = "http://localhost:56131/api/reproductor/album";
+  $url = "http://cloudsonos.azurewebsites.net/api/reproductor/album";
   $al = $_REQUEST['album'];
   $art = $_REQUEST['artista'];
 
@@ -34,7 +34,7 @@ curl_close($ch);
 
 //---------------------------------------------------------------------------------------------------------
 //Playlist
-$url2 = "http://localhost:56131/api/reproductor/playlist";
+$url2 = "http://cloudsonos.azurewebsites.net/api/reproductor/playlist";
 $alb = $_REQUEST['album'];
 $arti = $_REQUEST['artista'];
 

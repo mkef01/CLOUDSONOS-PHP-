@@ -1,7 +1,7 @@
 <?php
 session_start();
 //if ($_POST){
-$url = "http://localhost:56131/api/reproductor/eventos";
+$url = "http://cloudsonos.azurewebsites.net/api/reproductor/eventos";
 $usu = $_SESSION['usuario'];
 
 //$url2 = $url . "/login/acceso";

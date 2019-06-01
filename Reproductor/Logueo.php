@@ -13,7 +13,7 @@ session_start();
 </head>
 <!-- Parte importante para entrar al sistema -->
 <?php
-	$url = "http://localhost:56131/api";
+	$url = "http://cloudsonos.azurewebsites.net/api";
     if (isset($_REQUEST['Usuario']) && isset($_REQUEST['Contraseña'])){
         $nombre = $_REQUEST['Usuario'];
         $contra = $_REQUEST['Contraseña'];
@@ -56,7 +56,7 @@ if($result == 'true'){
 
 <!-- Verificacion para poder entrar al paypal -->
 <?php
-	$url = "http://localhost:56131/api/";
+	$url = "http://cloudsonos.azurewebsites.net/api/";
     if (isset($_REQUEST['nuevousuario']) && isset($_REQUEST['correonuevo']) && isset($_REQUEST['password1']) && isset($_REQUEST['password2'])){ 
         $nombre = $_REQUEST['nuevousuario'];
 		$correo = $_REQUEST['correonuevo'];
@@ -140,7 +140,7 @@ if($result == 100){
 							<div class="input-group blmd-form">
 								<div class="blmd-line">
 									<input type="password" name="Contraseña" autocomplete="off" id="Contraseña" class="form-control">
-									<label class="blmd-label">Password</label>
+									<label class="blmd-label">Contraseña</label>
 								</div>
 							</div>
 						</div>
@@ -170,7 +170,7 @@ if($result == 100){
 								<div class="input-group blmd-form">
 									<div class="blmd-line">
 										<input type="password" name="password1" autocomplete="off" id="password1" class="form-control">
-										<label class="blmd-label">Contraeña</label>
+										<label class="blmd-label">Contraseña</label>
 									</div>
 								</div>
 								<div class="input-group blmd-form">
