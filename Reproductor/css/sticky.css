@@ -1,0 +1,22 @@
+
+
+
+#sidebar ul {
+
+  margin: 0;
+  padding: 0;
+}
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  #sidebar ul {
+    position: sticky;
+    top: 0;
+  }
+}
+#sidebar ul li a {
+  display: block;
+  text-decoration: none;
+}
+#sidebar ul li a.current {
+  background: black;
+}
