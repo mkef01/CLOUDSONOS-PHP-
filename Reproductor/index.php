@@ -72,6 +72,8 @@ curl_close($ch2);
   <title>CloudSonos</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <!-- Sidebar-->
   <!-- Bootstrap CSS-->
@@ -118,6 +120,8 @@ curl_close($ch2);
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sticky.css">
 
+  
+
 
 
 
@@ -137,7 +141,7 @@ curl_close($ch2);
             <!-- Navbar Brand --><a href="index.php" class="navbar-brand">
               <div class="brand-text brand-big hidden-lg-down"><span>CloudSonos </span><strong>
                 </strong></div>
-              <div class="brand-text brand-small">CloudSonos</div>
+              <!-- <div class="brand-text brand-small">CloudSonos</div> -->
             </a>
             <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
           </div>
@@ -172,6 +176,8 @@ curl_close($ch2);
         <li class="active"> <a href="about.php" style="font-size:20px!important;"><i class="fas fa-user-alt"></i>Acerca de Nosotros</a></li>
         <!--Contactos-->
         <li class="active"> <a href="contact.php" style="font-size:20px!important;"><i class="fas fa-envelope"></i>Contactanos</a></li>
+        <!--Cerrar Sesion-->
+        <li class="active"> <a href="logout.php" style="font-size:20px!important;"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a></li>
         <!-- <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
